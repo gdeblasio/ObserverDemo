@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         ConcreteSubject cs = new ConcreteSubject();
-        HexObserver hexObserver = new HexObserver(cs);
-        OctObserver octObserver = new OctObserver(cs);
-        BinObserver binObserver = new BinObserver(cs);
+        Observer hexObserver = new HexObserver(cs);
+        Observer octObserver = new OctObserver(cs);
+        Observer binObserver = new BinObserver(cs);
         cs.add(hexObserver);
         cs.add(octObserver);
         cs.add(binObserver);
